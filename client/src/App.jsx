@@ -6,6 +6,13 @@ import WineList from './WineList';
 let App = () => {
   const [wines, setWines] = useState([]);
 
+  const sortOptions = ['recent vintage', 'drinkability'];
+  const [sortBy, setSortBy] = useState(sortOptions[0]);
+
+  const handleSort = (event) => {
+    console.log(event.target.value);
+  }
+
   useEffect(() => {
     axios.get('/wines')
       .then(res => {
@@ -17,7 +24,16 @@ let App = () => {
   return (
     <>
       <NavBar />
-      <WineList wines={wines}/>
+      <h2 id="wine-list">Wine List</h2>
+      <form>
+        <label>Sort By:</label>
+        <select name="sortBy" id="sortBy" onChange={handleSort}>
+          {sortOptions.map((option, i) => (
+            <option key={i} value={option}>{option}</option>
+          ))}
+        </select>
+      </form>
+      <WineList wines={wines} />
     </>
   )
 }
