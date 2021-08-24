@@ -16,7 +16,8 @@ module.exports.sortWines = (wines, sortBy) => {
 module.exports.searchWines = (wines, searchText) => {
   searchText = searchText.toLowerCase();
   const searchFn = (wine) => {
-    return wine.varietal.toLowerCase().includes(searchText);
+    toSearch = JSON.stringify(wine).toLowerCase();
+    return toSearch.includes(searchText);
   }
   return searchText = '' ? wines : wines.filter(searchFn);
 }
