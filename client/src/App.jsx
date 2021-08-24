@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
 import WineList from './WineList';
+import { sortWines } from '../helper/functions';
 
 let App = () => {
   const [wines, setWines] = useState([]);
@@ -11,12 +12,13 @@ let App = () => {
 
   const handleSort = (event) => {
     setSortBy(event.target.value);
+    setWines(sortWines(wines, sortBy));
   }
 
   useEffect(() => {
     axios.get('/wines')
       .then(res => {
-        setWines(res.data);
+        setWines(sortWines(res.data, sortBy));
       })
       .catch(err => console.log(err));
   }, []);
