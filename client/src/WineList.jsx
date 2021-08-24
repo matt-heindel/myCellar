@@ -1,28 +1,30 @@
 import React from 'react';
 
-let WineList = () => {
+let WineList = (props) => {
   return (
     <>
       <h2 id="wine-list">Wine List</h2>
       <ul>
-        <li key="1">
-          <WineListItem />
-        </li>
+        {props.wines.map(wine => (
+          <li key={wine.id}>
+            <WineListItem wine={wine} />
+          </li>
+        ))}
       </ul>
     </>
   )
 }
 
-let WineListItem = () => {
+let WineListItem = (props) => {
   return (
-    <>
+    <div className="li-container">
       <img
         className="img"
-        src="https://res.cloudinary.com/my-cellar/image/upload/v1629831425/IMG_0146_by5zbw.jpg"
+        src={props.wine.img}
         alt="wine 1"
       ></img>
-      <p>wine 1</p>
-    </>
+      <p>{props.wine.brand}</p>
+    </div>
   )
 }
 

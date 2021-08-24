@@ -38,3 +38,9 @@ body {
 .img {
   width: 50px;
 }
+
+.li-container {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
