@@ -1,11 +1,12 @@
 const express = require('express');
+const wines = require('./wines.json');
 
 const app = express();
 
 app.use(express.static(__dirname + '/../client/dist'));
 
-app.get('/', (req, res) => {
-  res.send('hello from express');
+app.get('/wines', (req, res) => {
+  res.json(wines);
 });
 
 app.listen(3000, () => {
