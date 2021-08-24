@@ -10,7 +10,7 @@ let App = () => {
   const [sortBy, setSortBy] = useState(sortOptions[0]);
 
   const handleSort = (event) => {
-    console.log(event.target.value);
+    setSortBy(event.target.value);
   }
 
   useEffect(() => {

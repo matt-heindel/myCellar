@@ -46,8 +46,10 @@ body {
   width: 100%;
 }
 
-.ul-container {
+.wine-list-container {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 95%;
+  height: 100%;
+  overflow-y: auto;
 }

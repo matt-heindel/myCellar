@@ -4,7 +4,7 @@ let WineList = (props) => {
 
   return (
     <>
-      <ul className="ul-container">
+      <ul className="wine-list-container">
         {props.wines.map(wine => (
           <li key={wine.id}>
             <WineListItem wine={wine} />
