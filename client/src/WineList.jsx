@@ -16,6 +16,9 @@ let WineList = (props) => {
 }
 
 let WineListItem = (props) => {
+  let [{brand, vintage, region, varietal}] = [props.wine];
+  let description = `${brand} ${vintage} ${region} ${varietal}`;
+
   return (
     <div className="li-container">
       <img
@@ -23,7 +26,7 @@ let WineListItem = (props) => {
         src={props.wine.img}
         alt="wine 1"
       ></img>
-      <p>{props.wine.brand}</p>
+      <p>{description}</p>
     </div>
   )
 }
