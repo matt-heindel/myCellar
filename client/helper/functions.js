@@ -14,3 +14,10 @@ module.exports.sortWines = (wines, sortBy) => {
   return wines;
 }
 
+module.exports.searchWines = (wines, searchText) => {
+  searchText = searchText.toLowerCase();
+  const searchFn = (wine) => {
+    return wine.varietal.toLowerCase().includes(searchText);
+  }
+  return searchText = '' ? wines : wines.filter(searchFn);
+}
