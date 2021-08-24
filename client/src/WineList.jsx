@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 let WineList = (props) => {
+  const sortOptions = ['vintage'];
+  const [sortBy, setSortBy] = useState(sortOptions[0]);
+
   return (
     <>
       <h2 id="wine-list">Wine List</h2>
@@ -16,8 +19,8 @@ let WineList = (props) => {
 }
 
 let WineListItem = (props) => {
-  let [{brand, vintage, region, varietal}] = [props.wine];
-  let description = `${brand} ${vintage} ${region} ${varietal}`;
+  let [{brand, vintage, region, varietal, fanciful}] = [props.wine];
+  let description = `${brand} ${vintage} ${region} ${fanciful} ${varietal}`;
 
   return (
     <div className="li-container">
