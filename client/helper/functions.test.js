@@ -30,12 +30,15 @@ describe('Sort Wines', () => {
     expect(typeof sortWines).toBe('function');
   });
 
-  it('should return something', () => {
-    expect(sortWines([{}])).toBeDefined();
-  });
-
   it('should return an array of object', () => {
-    const sorted = sortWines(wines);
+    const sorted = sortWines(wines, 'vintage');
     expect(Array.isArray(sorted)).toBe(true);
   });
+
+  it('should rank newest vintages first', () => {
+    const sorted = sortWines(wines, 'vintage');
+    expect(sorted[0].vintage).toBe(2019);
+    expect(sorted[1].vintage).toBe(2014);
+  });
+
 });

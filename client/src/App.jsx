@@ -6,7 +6,7 @@ import WineList from './WineList';
 let App = () => {
   const [wines, setWines] = useState([]);
 
-  const sortOptions = ['recent vintage', 'drinkability'];
+  const sortOptions = ['vintage', 'drinkability'];
   const [sortBy, setSortBy] = useState(sortOptions[0]);
 
   const handleSort = (event) => {
