@@ -1,0 +1,33 @@
+{
+  "name": "hr-rfp54-mvp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-heindel/hr-rfp54-mvp.git"
+  },
+  "author": "Matt Heindel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matt-heindel/hr-rfp54-mvp/issues"
+  },
+  "homepage": "https://github.com/matt-heindel/hr-rfp54-mvp#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-react": "^7.14.5"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  }
+}
