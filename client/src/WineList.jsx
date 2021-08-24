@@ -4,13 +4,11 @@ let WineList = (props) => {
 
   return (
     <>
-      <ul className="wine-list-container">
-        {props.wines.map(wine => (
-          <li key={wine.id}>
-            <WineListItem wine={wine} />
-          </li>
-        ))}
-      </ul>
+      {props.wines.map(wine => (
+        <div key={wine.id}>
+          <WineListItem wine={wine} />
+        </div>
+      ))}
     </>
   )
 }
@@ -24,9 +22,9 @@ let WineListItem = (props) => {
       <img
         className="img"
         src={props.wine.img}
-        alt="wine 1"
+        alt={description}
       ></img>
-      <p>{description}</p>
+      <p className="description">{description}</p>
     </div>
   )
 }

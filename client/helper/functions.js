@@ -10,8 +10,7 @@ module.exports.sortWines = (wines, sortBy) => {
     }
   }
 
-  wines.sort(sortFn);
-  return wines;
+  return wines.sort(sortFn);
 }
 
 module.exports.searchWines = (wines, searchText) => {

@@ -35,21 +35,35 @@ body {
   margin: 15px 0;
 }
 
+#form-container {
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
 .img {
   width: 75px;
-  margin: 5px;
+  margin: 15px;
 }
 
 .li-container {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 80%;
+  background-color: #6e685e;
+  margin: 15px 0 0 15px;
+  border-radius: 5px;
 }
 
-.wine-list-container {
+#list-container {
   display: flex;
   flex-direction: column;
-  width: 95%;
-  height: 100%;
+  width: 90%;
+  height: 95;
+  margin-left: 20px;
+  margin-bottom: 10px;
   overflow-y: auto;
+}
+
+.description {
+
 }

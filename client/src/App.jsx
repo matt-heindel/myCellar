@@ -5,10 +5,11 @@ import WineList from './WineList';
 import { sortWines, searchWines } from '../helper/functions';
 
 let App = () => {
+  const sortOptions = ['vintage', 'drinkability'];
+  const filterOptions = ['red', 'white', 'sparkling'];
+
   const [allWines, setAllWines] = useState([]);
   const [wines, setWines] = useState(allWines);
-
-  const sortOptions = ['vintage', 'drinkability'];
   const [sortBy, setSortBy] = useState(sortOptions[0]);
   const [searchText, setSearchText] = useState('');
 
@@ -34,20 +35,24 @@ let App = () => {
   return (
     <>
       <NavBar />
-      <h2 id="wine-list">Wine List</h2>
-      <form>
-        <label>Search: </label>
-        <input type="text" name="search" onChange={handleSearch}/>
-      </form>
-      <form>
-        <label>Sort By:</label>
-        <select name="sortBy" id="sortBy" onChange={handleSort}>
-          {sortOptions.map((option, i) => (
-            <option key={i} value={option}>{option}</option>
-          ))}
-        </select>
-      </form>
-      <WineList wines={wines} />
+      <div id="form-container">
+        <h2 id="list-heading">Wine List</h2>
+        <form>
+          <label>Search: </label>
+          <input type="text" name="search" onChange={handleSearch}/>
+        </form>
+        <form>
+          <label>Sort By: </label>
+          <select name="sortBy" id="sortBy" onChange={handleSort}>
+            {sortOptions.map((option, i) => (
+              <option key={i} value={option}>{option}</option>
+            ))}
+          </select>
+        </form>
+      </div>
+      <div id="list-container">
+        <WineList wines={wines} />
+      </div>
     </>
   )
 }

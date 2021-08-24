@@ -80,7 +80,7 @@ describe('Search Wines', () => {
   });
 
   it('should return only matching wines', () => {
-    const sorted = searchWines(wines, 'Sauv');
+    const sorted = searchWines(wines, 'sauv');
     expect(sorted[0].vintage).toBe(2019);
     expect(sorted.length).toBe(1);
   });
