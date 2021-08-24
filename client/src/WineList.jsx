@@ -4,7 +4,7 @@ let WineList = (props) => {
   return (
     <>
       <h2 id="wine-list">Wine List</h2>
-      <ul>
+      <ul className="ul-container">
         {props.wines.map(wine => (
           <li key={wine.id}>
             <WineListItem wine={wine} />

@@ -36,11 +36,18 @@ body {
 }
 
 .img {
-  width: 50px;
+  width: 75px;
+  margin: 5px;
 }
 
 .li-container {
   display: flex;
   flex-direction: row;
+  width: 100%;
+}
+
+.ul-container {
+  display: flex;
+  flex-direction: column;
   width: 60%;
 }
