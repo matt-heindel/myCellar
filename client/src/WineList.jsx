@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
 import Locate from './Locate';
 
 let WineList = (props) => {
@@ -33,8 +34,8 @@ let WineListItem = (props) => {
         <p className="description">{fanciful}</p>
       </div>
       <div className="buttons-container">
-        <button type="button">More</button>
-        <Locate />
+        <Button variant="primary">More</Button>
+        <Locate rack={props.wine.rack} position={props.wine.position}/>
         <p className="description">qty: {quantity}</p>
       </div>
     </div>

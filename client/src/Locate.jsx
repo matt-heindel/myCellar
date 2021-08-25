@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Locate = () => {
+const Locate = ({ rack, position }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -16,15 +15,12 @@ const Locate = () => {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>{rack}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>This wine is located at {position}</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
           </Button>
         </Modal.Footer>
       </Modal>

@@ -89,10 +89,14 @@ body {
   margin: 10px 0;
 }
 
-button {
-  background-color: #38b6ff;
-  color: #f5f1eb;
-  width: 75px;
-  height: 25px;
+form {
+  margin: 5px;
+}
+
+label {
+  margin: 5px;
+}
+
+.btn {
   margin: 5px;
 }
