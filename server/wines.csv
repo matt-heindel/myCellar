@@ -1,26 +1,26 @@
 id,varietal,region,fanciful,color,brand,vintage,img,quantity,rack,positions
-1,Merlot,Napa Valley,,red,Stag's Leap Wine Cellars,2014,https://res.cloudinary.com/my-cellar/image/upload/v1629831425/IMG_0146_by5zbw.jpg,1,Living Room Rack,A1
-2,Sauvignon Blanc,Napa Valley,,white,Beringer,2019,https://res.cloudinary.com/my-cellar/image/upload/v1629832058/IMG_0160_x2ugnh.jpg,1,Living Room Rack,B1
-3,Red Wine Blend,Napa Valley,Cinq Cepages,red,Chateau St. Jean,2018,https://res.cloudinary.com/my-cellar/image/upload/v1629832404/IMG_0148_vaxctd.jpg,6,Living Room Rack,"C1, D1, E1, F1, G1, H1"
-4,Cabernet Sauvignon,Napa Valley,Bancroft Ranch,red,Beringer,2018,https://res.cloudinary.com/my-cellar/image/upload/v1629832510/IMG_0157_zqbdxe.jpg,4,Living Room Rack,"A2, B2, C2, D2"
-5,Champagne,France,Cuvee Grand Esprit ,white sparkling,Marquis De La Mysteriale,NV,https://res.cloudinary.com/my-cellar/image/upload/v1629833341/IMG_0153_rvprtx.jpg,6,Living Room Rack,"E2, F2, G2, H2, A3, B3"
-6,Cabernet Sauvignon,Napa Valley,Caravina,red,Seavey,2013,https://res.cloudinary.com/my-cellar/image/upload/v1629833339/IMG_0154_nztx3b.jpg,1,Living Room Rack,C3
-7,Sauvignon Blanc,Rutherford Napa Valley,Reserve,white,Honig,2019,https://res.cloudinary.com/my-cellar/image/upload/v1629833339/IMG_0149_mi585d.jpg,2,Living Room Rack,"D3, E3"
-8,Cabernet Sauvignon,Knights Valley,Reserve,red,Beringer,2018,https://res.cloudinary.com/my-cellar/image/upload/v1629833339/IMG_0156_ao8ole.jpg,7,Living Room Rack,"F3, G3, H3, A4, B4, C4, D4"
-9,Cabernet Sauvignon,Napa Valley,Georges De Latour,red,Beaulieu Vineyard,2018,https://res.cloudinary.com/my-cellar/image/upload/v1629833337/IMG_0155_b5d8ow.jpg,2,Living Room Rack,"E4, F4"
-10,Malbec Rose,Calistoga Napa Valley,,blush,Provenance,2020,https://res.cloudinary.com/my-cellar/image/upload/v1629833337/IMG_0152_xpiowk.jpg,1,Living Room Rack,G4
-11,Cabernet Sauvignon,Napa Valley,,red,Hall,2017,https://res.cloudinary.com/my-cellar/image/upload/v1629833331/IMG_0151_zwwenc.jpg,1,Living Room Rack,H4
-12,Cabernet Sauvignon,Napa Valley,,red,Joseph Phelps,2017,https://res.cloudinary.com/my-cellar/image/upload/v1629833330/IMG_0150_soxz5s.jpg,1,Living Room Rack,A5
-13,Dessert Wine,Napa Valley,Nightingale,white,Beringer,1986,https://res.cloudinary.com/my-cellar/image/upload/v1629846572/IMG_0162_oegici.jpg,1,Living Room Rack,B5
-14,Cabernet Sauvignon,Napa Valley,Artemis,red,Stag's Leap Wine Cellars,2017,https://res.cloudinary.com/my-cellar/image/upload/v1629866526/IMG_0147_znyawj.jpg,1,Living Room Rack,C5
-15,Cabernet Sauvignon,Coombsville Napa Valley,,red,Stags' Leap Winery,2017,https://res.cloudinary.com/my-cellar/image/upload/v1629866716/IMG_0158_ag1gsi.jpg,1,Living Room Rack,D5
-16,Chardonnay,Napa Valley,,white,Eleven Eleven,2019,https://res.cloudinary.com/my-cellar/image/upload/v1629866723/IMG_0161_mihdbq.jpg,3,Living Room Rack,"E5, F5, G5"
-17,Chardonnay,Napa Valley,Private Reserve,white,Beringer,2017,https://res.cloudinary.com/my-cellar/image/upload/v1629866723/IMG_0159_sphaun.jpg,1,Living Room Rack,H5
-18,Pinot Noir,Carneros,Grace Benoist Ranch,red,Etude,2019,https://res.cloudinary.com/my-cellar/image/upload/v1629866729/IMG_0167_kzmc3k.jpg,1,Living Room Rack,A6
-19,Cabernet Sauvignon,Napa Valley,Bin 704,red,Penfolds,2019,https://res.cloudinary.com/my-cellar/image/upload/v1629866734/IMG_0168_maq4mr.jpg,1,Living Room Rack,B6
-20,Cabernet Sauvignon,Sonoma County,Reserve,red,Chateau St. Jean,2016,https://res.cloudinary.com/my-cellar/image/upload/v1629866735/IMG_0165_tasfap.jpg,3,Living Room Rack,"C6, D6, E6"
-21,Petite Sirah,Napa Valley,,red,Stags' Leap Winery,2016,https://res.cloudinary.com/my-cellar/image/upload/v1629866734/IMG_0166_y6llrm.jpg,1,Living Room Rack,F6
-22,Prosecco,Italy,,white sparkling,Cavaliere D'oro,NV,https://res.cloudinary.com/my-cellar/image/upload/v1629866736/IMG_0169_zhixfm.jpg,13,Living Room Rack,"G6, H6, A7, B7, C7, D7, E7, F7, G7, H7, A8, B8, C8"
-23,Riesling,Napa Valley,Carol's song,white,Eleven Eleven,2020,https://res.cloudinary.com/my-cellar/image/upload/v1629866736/IMG_0163_lxerkl.jpg,2,Living Room Rack,"D8, E8"
-24,Cabernet Sauvignon,Napa Valley,Private Reserve,red,Beringer,2018,https://res.cloudinary.com/my-cellar/image/upload/v1629866739/IMG_0164_yjg454.jpg,2,Living Room Rack,"F8, G8"
-25,Merlot,Napa Valley,,red,Duckhorn,2019,https://res.cloudinary.com/my-cellar/image/upload/v1629866741/IMG_0170_zbhdki.jpg,1,Living Room Rack,H8
+1,Merlot,Napa Valley,,red,Stag's Leap Wine Cellars,2014,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629831425/IMG_0146_by5zbw.jpg",1,Living Room Rack,A1
+2,Sauvignon Blanc,Napa Valley,,white,Beringer,2019,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629832058/IMG_0160_x2ugnh.jpg",1,Living Room Rack,B1
+3,Red Wine Blend,Napa Valley,Cinq Cepages,red,Chateau St. Jean,2018,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629832404/IMG_0148_vaxctd.jpg",6,Living Room Rack,"C1, D1, E1, F1, G1, H1"
+4,Cabernet Sauvignon,Napa Valley,Bancroft Ranch,red,Beringer,2018,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629832510/IMG_0157_zqbdxe.jpg",4,Living Room Rack,"A2, B2, C2, D2"
+5,Champagne,France,Cuvee Grand Esprit ,white sparkling,Marquis De La Mysteriale,NV,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629833341/IMG_0153_rvprtx.jpg",6,Living Room Rack,"E2, F2, G2, H2, A3, B3"
+6,Cabernet Sauvignon,Napa Valley,Caravina,red,Seavey,2013,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629833339/IMG_0154_nztx3b.jpg",1,Living Room Rack,C3
+7,Sauvignon Blanc,Rutherford Napa Valley,Reserve,white,Honig,2019,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629833339/IMG_0149_mi585d.jpg",2,Living Room Rack,"D3, E3"
+8,Cabernet Sauvignon,Knights Valley,Reserve,red,Beringer,2018,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629833339/IMG_0156_ao8ole.jpg",7,Living Room Rack,"F3, G3, H3, A4, B4, C4, D4"
+9,Cabernet Sauvignon,Napa Valley,Georges De Latour,red,Beaulieu Vineyard,2018,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629833337/IMG_0155_b5d8ow.jpg",2,Living Room Rack,"E4, F4"
+10,Malbec Rose,Calistoga Napa Valley,,blush,Provenance,2020,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629833337/IMG_0152_xpiowk.jpg",1,Living Room Rack,G4
+11,Cabernet Sauvignon,Napa Valley,,red,Hall,2017,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629833331/IMG_0151_zwwenc.jpg",1,Living Room Rack,H4
+12,Cabernet Sauvignon,Napa Valley,,red,Joseph Phelps,2017,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629833330/IMG_0150_soxz5s.jpg",1,Living Room Rack,A5
+13,Dessert Wine,Napa Valley,Nightingale,white,Beringer,1986,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629846572/IMG_0162_oegici.jpg",1,Living Room Rack,B5
+14,Cabernet Sauvignon,Napa Valley,Artemis,red,Stag's Leap Wine Cellars,2017,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866526/IMG_0147_znyawj.jpg",1,Living Room Rack,C5
+15,Cabernet Sauvignon,Coombsville Napa Valley,,red,Stags' Leap Winery,2017,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866716/IMG_0158_ag1gsi.jpg",1,Living Room Rack,D5
+16,Chardonnay,Napa Valley,,white,Eleven Eleven,2019,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866723/IMG_0161_mihdbq.jpg",3,Living Room Rack,"E5, F5, G5"
+17,Chardonnay,Napa Valley,Private Reserve,white,Beringer,2017,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866723/IMG_0159_sphaun.jpg",1,Living Room Rack,H5
+18,Pinot Noir,Carneros,Grace Benoist Ranch,red,Etude,2019,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866729/IMG_0167_kzmc3k.jpg",1,Living Room Rack,A6
+19,Cabernet Sauvignon,Napa Valley,Bin 704,red,Penfolds,2019,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866734/IMG_0168_maq4mr.jpg",1,Living Room Rack,B6
+20,Cabernet Sauvignon,Sonoma County,Reserve,red,Chateau St. Jean,2016,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866735/IMG_0165_tasfap.jpg",3,Living Room Rack,"C6, D6, E6"
+21,Petite Sirah,Napa Valley,,red,Stags' Leap Winery,2016,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866734/IMG_0166_y6llrm.jpg",1,Living Room Rack,F6
+22,Prosecco,Italy,,white sparkling,Cavaliere D'oro,NV,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866736/IMG_0169_zhixfm.jpg",13,Living Room Rack,"G6, H6, A7, B7, C7, D7, E7, F7, G7, H7, A8, B8, C8"
+23,Riesling,Napa Valley,Carol's song,white,Eleven Eleven,2020,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866736/IMG_0163_lxerkl.jpg",2,Living Room Rack,"D8, E8"
+24,Cabernet Sauvignon,Napa Valley,Private Reserve,red,Beringer,2018,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866739/IMG_0164_yjg454.jpg",2,Living Room Rack,"F8, G8"
+25,Merlot,Napa Valley,,red,Duckhorn,2019,"https://res.cloudinary.com/my-cellar/image/upload/c_scale,w_125/v1629866741/IMG_0170_zbhdki.jpg",1,Living Room Rack,H8
