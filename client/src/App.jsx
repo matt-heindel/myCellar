@@ -40,8 +40,8 @@ let App = () => {
       <div id="form-container">
         <h2 id="list-heading">myWines</h2>
         <form>
-          <label>Search: </label>
-          <input type="text" name="search-wine" onChange={handleSearch}/>
+          <label for="search-wine">Search: </label>
+          <input type="text" id="search-wine" onChange={handleSearch}/>
         </form>
         <form>
           <label>Sort By: </label>
