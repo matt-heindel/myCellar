@@ -27,14 +27,14 @@ const Locate = ({ rack, positions }) => {
         </Modal.Header>
         <Modal.Body>
           <div className="locate-grid">
-            {positionsArray.map((pos) => {
+            {positionsArray.map((pos, i) => {
               if (pos === 0) {
                 return (
-                  <div className="spot-empty"></div>
+                  <div key={i} className="spot-empty"></div>
                 );
               } else {
                 return (
-                  <div className="spot-full">{pos}</div>
+                  <div key={i} className="spot-full">{pos}</div>
                 );
               }
             })}
