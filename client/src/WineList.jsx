@@ -14,7 +14,7 @@ let WineList = (props) => {
 }
 
 let WineListItem = (props) => {
-  let [{brand, vintage, region, varietal, fanciful}] = [props.wine];
+  let [{brand, vintage, region, varietal, fanciful, quantity}] = [props.wine];
   let description = `${brand} ${vintage} ${region} ${fanciful} ${varietal}`;
 
   return (
@@ -34,7 +34,7 @@ let WineListItem = (props) => {
       <div className="buttons-container">
         <button type="button">More</button>
         <button type="button">Locate</button>
-        <p className="description">qty: 4</p>
+        <p className="description">qty: {quantity}</p>
       </div>
     </div>
   )
