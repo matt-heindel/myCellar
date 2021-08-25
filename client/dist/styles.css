@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
+  justify-content: space-between;
 }
 
 #nav-logo {
@@ -33,6 +34,24 @@ body {
   font-style: italic;
   font-size: 2.25em;
   margin: 15px 0;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  color:#f5f1eb;
+  margin: 5px;
+  margin-right: 100px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.nav-options {
+  margin: 5px;
+}
+
+.nav-options:hover {
+  color: #38b6ff
 }
 
 #form-container {
@@ -59,7 +78,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 95;
   margin-left: 50px;
   margin-bottom: 10px;
   overflow-y: auto;
