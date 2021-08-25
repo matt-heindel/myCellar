@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
+import { getLocationGrid } from '../helper/functions';
 
 const Locate = ({ rack, position }) => {
   const [show, setShow] = useState(false);
@@ -7,16 +8,7 @@ const Locate = ({ rack, position }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const positions = [
-    0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 1, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0, 0, 0, 0
-  ]
+  const positions = getLocationGrid(position);
 
   return (
     <>

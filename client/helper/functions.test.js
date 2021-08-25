@@ -1,5 +1,6 @@
 const sortWines = require('./functions.js').sortWines;
 const searchWines = require('./functions.js').searchWines;
+const getLocationGrid = require('./functions.js').getLocationGrid;
 
 describe('Sort Wines', () => {
   const wines = [
@@ -83,6 +84,87 @@ describe('Search Wines', () => {
     const sorted = searchWines(wines, 'sauv');
     expect(sorted[0].vintage).toBe(2019);
     expect(sorted.length).toBe(1);
+  });
+
+});
+
+describe('Get Location Grid', () => {
+  it('should be a function', () => {
+    expect(typeof getLocationGrid).toBe('function');
+  });
+
+  it('should return an array', () => {
+    expect(Array.isArray(getLocationGrid('A1'))).toBe(true);
+  });
+
+  it('should locate A1', () => {
+    const expected = [
+      1, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0
+    ];
+    expect(getLocationGrid('A1')).toEqual(expected);
+  });
+
+  it('should locate C2', () => {
+    const expected = [
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 1, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0
+    ];
+    expect(getLocationGrid('C2')).toEqual(expected);
+  });
+
+  it('should locate B4', () => {
+    const expected = [
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 1, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0
+    ];
+    expect(getLocationGrid('B4')).toEqual(expected);
+  });
+
+  it('should locate H8', () => {
+    const expected = [
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 1
+    ];
+    expect(getLocationGrid('H8')).toEqual(expected);
+  });
+
+  it('should locate G7', () => {
+    const expected = [
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 1, 0,
+      0, 0, 0, 0, 0, 0, 0, 0
+    ];
+    expect(getLocationGrid('G7')).toEqual(expected);
   });
 
 });
