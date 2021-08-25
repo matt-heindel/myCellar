@@ -41,7 +41,7 @@ let App = () => {
         <h2 id="list-heading">myWines</h2>
         <form>
           <label>Search: </label>
-          <input type="text" name="search" onChange={handleSearch}/>
+          <input type="text" name="search-wine" onChange={handleSearch}/>
         </form>
         <form>
           <label>Sort By: </label>

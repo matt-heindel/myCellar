@@ -35,7 +35,12 @@ let WineListItem = (props) => {
       </div>
       <div className="buttons-container">
         <Button variant="primary">More</Button>
-        <Locate rack={props.wine.rack} positions={props.wine.positions}/>
+        <Locate
+          rack={props.wine.rack}
+          positions={props.wine.positions}
+          description={description}
+          quantity={props.wine.quantity}
+        />
         <p className="description">qty: {quantity}</p>
       </div>
     </div>

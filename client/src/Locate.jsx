@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 import { getLocationGrid } from '../helper/functions';
 
-const Locate = ({ rack, positions }) => {
+const Locate = ({ rack, positions, description, quantity }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -40,7 +40,9 @@ const Locate = ({ rack, positions }) => {
             })}
           </div>
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className="footer">
+        <p className="description">{description}</p>
+        <p className="description">quantity: {quantity}</p>
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>

@@ -133,3 +133,7 @@ label {
 .spot-full:hover {
   background-color: #38b6ff;
 }
+
+.footer {
+  justify-content: space-between!important;
+}
