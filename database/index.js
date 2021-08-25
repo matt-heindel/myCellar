@@ -8,7 +8,7 @@ const wineSchema = mongoose.Schema({
   fanciful: String,
   color: String,
   brand: String,
-  vintage: Number,
+  vintage: String,
   img: String,
   quantity: Number,
   rack: String,

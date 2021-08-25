@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx jest client/helper/functions.test.js --watch",
     "start": "nodemon server/index.js",
-    "react-dev": "webpack -w"
+    "react-dev": "webpack -w",
+    "seed": "node database/seed.js"
   },
   "repository": {
     "type": "git",
