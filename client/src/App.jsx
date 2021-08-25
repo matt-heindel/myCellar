@@ -36,7 +36,7 @@ let App = () => {
     <>
       <NavBar />
       <div id="form-container">
-        <h2 id="list-heading">Wine List</h2>
+        <h2 id="list-heading">myWines</h2>
         <form>
           <label>Search: </label>
           <input type="text" name="search" onChange={handleSearch}/>

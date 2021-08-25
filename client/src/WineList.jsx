@@ -24,7 +24,18 @@ let WineListItem = (props) => {
         src={props.wine.img}
         alt={description}
       ></img>
-      <p className="description">{description}</p>
+      <div className="description-container">
+        <p className="description brand">{brand}</p>
+        <p className="description">{varietal}</p>
+        <p className="description">{vintage}</p>
+        <p className="description">{region}</p>
+        <p className="description">{fanciful}</p>
+      </div>
+      <div className="buttons-container">
+        <button type="button">More</button>
+        <button type="button">Locate</button>
+        <p className="description">qty: 4</p>
+      </div>
     </div>
   )
 }

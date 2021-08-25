@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './assets/wine.svg'
+import myCellar from './assets/myCellar.svg'
 
 let NavBar = () => (
   <div className='nav-bar'>
-    <img className='nav-logo' src={logo} alt='wine logo'></img>
-    <header><h2 className='nav-title'>myCellar</h2></header>
+    <img id='nav-logo' src={myCellar} alt='wine logo'></img>
   </div>
 );
 
