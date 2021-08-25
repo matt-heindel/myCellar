@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 
 const Locate = ({ rack, position }) => {
   const [show, setShow] = useState(false);
@@ -7,17 +7,47 @@ const Locate = ({ rack, position }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const positions = [
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 1, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
+  ]
+
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
         Locate
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        size="lg"
+        centered
+      >
         <Modal.Header closeButton>
-          <Modal.Title>{rack}</Modal.Title>
+          <Modal.Title>{rack} - {position}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>This wine is located at {position}</Modal.Body>
+        <Modal.Body>
+          <div className="locate-grid">
+            {positions.map((pos) => {
+              if (pos === 0) {
+                return (
+                  <div className="spot-empty"></div>
+                );
+              } else {
+                return (
+                  <div className="spot-full">{position}</div>
+                );
+              }
+            })}
+          </div>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

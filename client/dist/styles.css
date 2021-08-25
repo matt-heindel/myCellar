@@ -100,3 +100,31 @@ label {
 .btn {
   margin: 5px;
 }
+
+.locate-grid {
+  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  height: 500px;
+}
+
+.spot-empty {
+  margin: 15px;
+  border: 1px solid #54524d;
+  border-radius: 5%;
+}
+
+.spot-empty:hover {
+  background-color: #54524d;
+}
+
+.spot-full {
+  margin: 3px;
+  background-color: #38b6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-radius: 5%;
+}
