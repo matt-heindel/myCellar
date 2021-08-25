@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Locate from './Locate';
 
 let WineList = (props) => {
 
@@ -33,7 +34,7 @@ let WineListItem = (props) => {
       </div>
       <div className="buttons-container">
         <button type="button">More</button>
-        <button type="button">Locate</button>
+        <Locate />
         <p className="description">qty: {quantity}</p>
       </div>
     </div>
