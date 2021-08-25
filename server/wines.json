@@ -10,7 +10,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629831425/IMG_0146_by5zbw.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "A1"
+    "positions": "A1"
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629832058/IMG_0160_x2ugnh.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "A2"
+    "positions": "B1"
   },
   {
     "id": 3,
@@ -34,9 +34,9 @@
     "brand": "Chateau St. Jean",
     "vintage": "2018",
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629832404/IMG_0148_vaxctd.jpg",
-    "quantity": 10,
+    "quantity": 6,
     "rack": "Living Room Rack",
-    "position": "A3"
+    "positions": "C1, D1, E1, F1, G1, H1"
   },
   {
     "id": 4,
@@ -47,9 +47,9 @@
     "brand": "Beringer",
     "vintage": "2018",
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629832510/IMG_0157_zqbdxe.jpg",
-    "quantity": 6,
+    "quantity": 4,
     "rack": "Living Room Rack",
-    "position": "A4"
+    "positions": "A2, B2, C2, D2"
   },
   {
     "id": 5,
@@ -60,9 +60,9 @@
     "brand": "Marquis De La Mysteriale",
     "vintage": "NV",
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629833341/IMG_0153_rvprtx.jpg",
-    "quantity": 12,
+    "quantity": 6,
     "rack": "Living Room Rack",
-    "position": "A6"
+    "positions": "E2, F2, G2, H2, A3, B3"
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629833339/IMG_0154_nztx3b.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "B1"
+    "positions": "C3"
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629833339/IMG_0149_mi585d.jpg",
     "quantity": 2,
     "rack": "Living Room Rack",
-    "position": "B3"
+    "positions": "D3, E3"
   },
   {
     "id": 8,
@@ -99,9 +99,9 @@
     "brand": "Beringer",
     "vintage": "2018",
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629833339/IMG_0156_ao8ole.jpg",
-    "quantity": 12,
+    "quantity": 7,
     "rack": "Living Room Rack",
-    "position": "B4"
+    "positions": "F3, G3, H3, A4, B4, C4, D4"
   },
   {
     "id": 9,
@@ -112,9 +112,9 @@
     "brand": "Beaulieu Vineyard",
     "vintage": "2018",
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629833337/IMG_0155_b5d8ow.jpg",
-    "quantity": 3,
+    "quantity": 2,
     "rack": "Living Room Rack",
-    "position": "B5"
+    "positions": "E4, F4"
   },
   {
     "id": 10,
@@ -125,9 +125,9 @@
     "brand": "Provenance",
     "vintage": "2020",
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629833337/IMG_0152_xpiowk.jpg",
-    "quantity": 2,
+    "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "B6"
+    "positions": "G4"
   },
   {
     "id": 11,
@@ -140,7 +140,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629833331/IMG_0151_zwwenc.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "B7"
+    "positions": "H4"
   },
   {
     "id": 12,
@@ -153,7 +153,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629833330/IMG_0150_soxz5s.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "C2"
+    "positions": "A5"
   },
   {
     "id": 13,
@@ -166,7 +166,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629846572/IMG_0162_oegici.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "C3"
+    "positions": "B5"
   },
   {
     "id": 14,
@@ -179,7 +179,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866526/IMG_0147_znyawj.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "C4"
+    "positions": "C5"
   },
   {
     "id": 15,
@@ -192,7 +192,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866716/IMG_0158_ag1gsi.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "C5"
+    "positions": "D5"
   },
   {
     "id": 16,
@@ -205,7 +205,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866723/IMG_0161_mihdbq.jpg",
     "quantity": 3,
     "rack": "Living Room Rack",
-    "position": "C7"
+    "positions": "E5, F5, G5"
   },
   {
     "id": 17,
@@ -218,7 +218,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866723/IMG_0159_sphaun.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "D1"
+    "positions": "H5"
   },
   {
     "id": 18,
@@ -231,7 +231,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866729/IMG_0167_kzmc3k.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "D2"
+    "positions": "A6"
   },
   {
     "id": 19,
@@ -244,7 +244,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866734/IMG_0168_maq4mr.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "D3"
+    "positions": "B6"
   },
   {
     "id": 20,
@@ -257,7 +257,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866735/IMG_0165_tasfap.jpg",
     "quantity": 3,
     "rack": "Living Room Rack",
-    "position": "D5"
+    "positions": "C6, D6, E6"
   },
   {
     "id": 21,
@@ -270,7 +270,7 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866734/IMG_0166_y6llrm.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "E3"
+    "positions": "F6"
   },
   {
     "id": 22,
@@ -281,9 +281,9 @@
     "brand": "Cavaliere D'oro",
     "vintage": "NV",
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866736/IMG_0169_zhixfm.jpg",
-    "quantity": 39,
+    "quantity": 13,
     "rack": "Living Room Rack",
-    "position": "E4"
+    "positions": "G6, H6, A7, B7, C7, D7, E7, F7, G7, H7, A8, B8, C8"
   },
   {
     "id": 23,
@@ -294,9 +294,9 @@
     "brand": "Eleven Eleven",
     "vintage": "2020",
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866736/IMG_0163_lxerkl.jpg",
-    "quantity": 4,
+    "quantity": 2,
     "rack": "Living Room Rack",
-    "position": "E5"
+    "positions": "D8, E8"
   },
   {
     "id": 24,
@@ -307,9 +307,9 @@
     "brand": "Beringer",
     "vintage": "2018",
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866739/IMG_0164_yjg454.jpg",
-    "quantity": 8,
+    "quantity": 2,
     "rack": "Living Room Rack",
-    "position": "E6"
+    "positions": "F8, G8"
   },
   {
     "id": 25,
@@ -322,6 +322,6 @@
     "img": "https://res.cloudinary.com/my-cellar/image/upload/v1629866741/IMG_0170_zbhdki.jpg",
     "quantity": 1,
     "rack": "Living Room Rack",
-    "position": "E7"
+    "positions": "H8"
   }
- ]
+]

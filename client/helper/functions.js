@@ -22,7 +22,7 @@ module.exports.searchWines = (wines, searchText) => {
   return searchText = '' ? wines : wines.filter(searchFn);
 }
 
-module.exports.getLocationGrid = (position, size = 8) => {
+module.exports.getLocationGrid = (positionsString, size = 8) => {
   const alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const grid = [
     0, 0, 0, 0, 0, 0, 0, 0,
@@ -35,9 +35,13 @@ module.exports.getLocationGrid = (position, size = 8) => {
     0, 0, 0, 0, 0, 0, 0, 0
   ]
 
-  const col = alpha.indexOf(position[0]);
-  const row = (Number.parseInt(position[1]) - 1) * size;
-  grid[col + row] = 1;
+  const positionsArray = positionsString ? positionsString.split(', '): [];
+
+  positionsArray.forEach(pos => {
+    const col = alpha.indexOf(pos[0]);
+    const row = (Number.parseInt(pos[1]) - 1) * size;
+    grid[col + row] = pos;
+  });
 
   return grid;
 }

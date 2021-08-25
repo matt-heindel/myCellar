@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 import { getLocationGrid } from '../helper/functions';
 
-const Locate = ({ rack, position }) => {
+const Locate = ({ rack, positions }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const positions = getLocationGrid(position);
+  const positionsArray = getLocationGrid(positions);
 
   return (
     <>
@@ -23,18 +23,18 @@ const Locate = ({ rack, position }) => {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title>{rack} - {position}</Modal.Title>
+          <Modal.Title>{rack} - {positions}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="locate-grid">
-            {positions.map((pos) => {
+            {positionsArray.map((pos) => {
               if (pos === 0) {
                 return (
                   <div className="spot-empty"></div>
                 );
               } else {
                 return (
-                  <div className="spot-full">{position}</div>
+                  <div className="spot-full">{pos}</div>
                 );
               }
             })}
