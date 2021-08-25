@@ -1,6 +1,6 @@
 module.exports.sortWines = (wines, sortBy) => {
   let sortFn
-  if (sortBy === 'vintage') {
+  if (sortBy === 'new') {
     sortFn = (a, b) => {
       return a.vintage < b.vintage ? 1 : -1;
     }

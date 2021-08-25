@@ -5,7 +5,7 @@ import WineList from './WineList';
 import { sortWines, searchWines } from '../helper/functions';
 
 let App = () => {
-  const sortOptions = ['vintage', 'drinkability'];
+  const sortOptions = ['drinkability', 'new'];
   const filterOptions = ['red', 'white', 'sparkling'];
 
   const [allWines, setAllWines] = useState([]);
@@ -15,12 +15,14 @@ let App = () => {
 
   const handleSort = (event) => {
     setSortBy(event.target.value);
-    setWines(sortWines(allWines, sortBy));
+    setWines(sortWines(wines, event.target.value));
   }
 
   const handleSearch = (event) => {
     setSearchText(event.target.value);
-    setWines(searchWines(allWines, event.target.value));
+    let searchedWines = searchWines(allWines, event.target.value);
+    let sortedWines = sortWines(searchedWines, sortBy);
+    setWines(sortedWines);
   }
 
   useEffect(() => {

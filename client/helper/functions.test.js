@@ -32,12 +32,12 @@ describe('Sort Wines', () => {
   });
 
   it('should return an array of object', () => {
-    const sorted = sortWines(wines, 'vintage');
+    const sorted = sortWines(wines, 'new');
     expect(Array.isArray(sorted)).toBe(true);
   });
 
   it('should rank newest vintages first', () => {
-    const sorted = sortWines(wines, 'vintage');
+    const sorted = sortWines(wines, 'new');
     expect(sorted[0].vintage).toBe(2019);
     expect(sorted[1].vintage).toBe(2014);
   });
@@ -75,7 +75,7 @@ describe('Search Wines', () => {
   });
 
   it('should return an array of object', () => {
-    const sorted = searchWines(wines, 'vintage');
+    const sorted = searchWines(wines, 'new');
     expect(Array.isArray(sorted)).toBe(true);
   });
 
