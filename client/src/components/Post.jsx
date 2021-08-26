@@ -28,25 +28,33 @@ const Post = ({ handlePost }) => {
         </Modal.Header>
         <Modal.Body>
           <Form>
-            <Form.Group className="mb-3" controlId="Brand">
+            <Form.Group className="mb-2" controlId="Brand">
               <Form.Label>Brand Name</Form.Label>
               <Form.Control type="text" placeholder="Beringer" />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="Varietal">
+            <Form.Group className="mb-2" controlId="Varietal">
               <Form.Label>Varietal</Form.Label>
               <Form.Control type="text" placeholder="Cabernet Sauvignon" />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="Vintage">
+            <Form.Group className="mb-2" controlId="Vintage">
               <Form.Label>Vintage</Form.Label>
               <Form.Control type="text" placeholder="2017" />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="Region">
+            <Form.Group className="mb-2" controlId="Region">
               <Form.Label>Region</Form.Label>
               <Form.Control type="text" placeholder="Napa Valley" />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="Fanciful">
+            <Form.Group className="mb-2" controlId="Fanciful">
               <Form.Label>Fanciful Name</Form.Label>
               <Form.Control type="text" placeholder="Reserve" />
+            </Form.Group>
+            <Form.Group controlId="formFile" className="mb-3">
+              <Form.Label>Upload a photo</Form.Label>
+              <Form.Control type="file" />
+            </Form.Group>
+            <Form.Group className="mb-2" controlId="Quantity">
+              <Form.Label>Quantity</Form.Label>
+              <Form.Control type="text" placeholder="1" />
             </Form.Group>
           </Form>
         </Modal.Body>
