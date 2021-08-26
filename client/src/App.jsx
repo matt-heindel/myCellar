@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
 import WineList from './WineList';
+import Ads from './Ads';
 import { sortWines, searchWines } from '../helper/functions';
 
 let App = () => {
@@ -52,8 +53,13 @@ let App = () => {
           </select>
         </form>
       </div>
-      <div id="list-container">
-        <WineList wines={wines} />
+      <div id="body-container">
+        <div id="list-container">
+          <WineList wines={wines} />
+        </div>
+        <div id="side-bar-container">
+          <Ads />
+        </div>
       </div>
     </>
   )
