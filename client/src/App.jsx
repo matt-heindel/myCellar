@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import NavBar from './NavBar';
-import WineList from './WineList';
-import Ads from './Ads';
+import NavBar from './components/NavBar';
+import Controls from './components/Controls';
+import WineList from './components/WineList';
 import { sortWines, searchWines } from '../helper/functions';
 
 let App = () => {
   const sortOptions = ['drinkability', 'new'];
-  const filterOptions = ['red', 'white', 'sparkling'];
 
   const [allWines, setAllWines] = useState([]);
   const [wines, setWines] = useState(allWines);
@@ -38,29 +37,14 @@ let App = () => {
   return (
     <>
       <NavBar />
-      <div id="form-container">
-        <h2 id="list-heading">myWines</h2>
-        <form>
-          <label htmlFor="search-wine">Search: </label>
-          <input type="text" id="search-wine" onChange={handleSearch}/>
-        </form>
-        <form>
-          <label>Sort By: </label>
-          <select name="sortBy" id="sortBy" onChange={handleSort}>
-            {sortOptions.map((option, i) => (
-              <option key={i} value={option}>{option}</option>
-            ))}
-          </select>
-        </form>
-      </div>
-      <div id="body-container">
-        <div id="list-container">
-          <WineList wines={wines} />
-        </div>
-        <div id="side-bar-container">
-          <Ads />
-        </div>
-      </div>
+      <Controls
+        handleSearch={handleSearch}
+        handleSort={handleSort}
+        sortOptions={sortOptions}
+      />
+      <WineList
+        wines={wines}
+      />
     </>
   )
 }

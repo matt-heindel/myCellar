@@ -1,30 +1,37 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
+import Ads from './Ads';
 import Locate from './Locate';
 import More from './More';
 
 let WineList = (props) => {
 
   return (
-    <>
-      {props.wines.map(wine => (
-        <div key={wine.id}>
-          <WineListItem wine={wine} />
-        </div>
-      ))}
-    </>
+    <div id="body-container">
+      <div id="list-container">
+        {props.wines.map(wine => (
+          <WineListItem
+            wine={wine}
+            key={wine.id}
+          />
+        ))}
+      </div>
+      <div id="side-bar-container">
+        <Ads />
+      </div>
+    </div>
   )
 }
 
-let WineListItem = (props) => {
-  let [{brand, vintage, region, varietal, fanciful, quantity}] = [props.wine];
+let WineListItem = ({ wine }) => {
+  let [{brand, vintage, region, varietal, fanciful, quantity}] = [wine];
   let description = `${brand} ${vintage} ${region} ${fanciful} ${varietal}`;
 
   return (
     <div className="li-container">
       <img
         className="img"
-        src={props.wine.img}
+        src={wine.img}
         alt={description}
       ></img>
       <div className="description-container">
@@ -36,14 +43,14 @@ let WineListItem = (props) => {
       </div>
       <div className="buttons-container">
         <More
-          wine={props.wine}
+          wine={wine}
           description={description}
         />
         <Locate
-          rack={props.wine.rack}
-          positions={props.wine.positions}
+          rack={wine.rack}
+          positions={wine.positions}
           description={description}
-          quantity={props.wine.quantity}
+          quantity={wine.quantity}
         />
         <p className="description">qty: {quantity}</p>
       </div>

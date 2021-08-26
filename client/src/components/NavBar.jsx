@@ -1,5 +1,5 @@
 import React from 'react';
-import myCellar from './assets/myCellar.svg'
+import myCellar from '../assets/myCellar.svg'
 
 let NavBar = () => (
   <div className='nav-bar'>

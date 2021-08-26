@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import { getLocationGrid } from '../helper/functions';
+import { getLocationGrid } from '../../helper/functions';
 
 const Locate = ({ rack, positions, description, quantity }) => {
   const [show, setShow] = useState(false);

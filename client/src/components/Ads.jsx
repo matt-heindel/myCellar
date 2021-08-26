@@ -1,7 +1,7 @@
 import React from 'react';
-import ad01 from './assets/ad01.svg';
-import ad02 from './assets/ad02.svg';
-import ad03 from './assets/ad03.svg';
+import ad01 from '../assets/ad01.svg';
+import ad02 from '../assets/ad02.svg';
+import ad03 from '../assets/ad03.svg';
 
 const Ads = () => {
   return (
