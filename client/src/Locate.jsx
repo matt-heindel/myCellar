@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
+import { Modal, Button } from 'react-bootstrap';
 import { getLocationGrid } from '../helper/functions';
 
 const Locate = ({ rack, positions, description, quantity }) => {
