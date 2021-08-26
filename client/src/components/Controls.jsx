@@ -1,13 +1,15 @@
 import React from 'react';
+import Post from './Post';
 
-let Controls = ({ handleSearch, handleSort, sortOptions }) => (
+let Controls = ({ handleSearch, handleSort, handlePost, sortOptions }) => (
   <div id="form-container">
-    <h2 id="list-heading">myWines</h2>
-      <form>
+    <div id="control-container">
+      <h2 id="list-heading">myWines</h2>
+      <form className="control">
         <label htmlFor="search-wine">Search: </label>
         <input type="text" id="search-wine" onChange={handleSearch}/>
       </form>
-      <form>
+      <form className="control">
         <label>Sort By: </label>
         <select name="sortBy" id="sortBy" onChange={handleSort}>
           {sortOptions.map((option, i) => (
@@ -15,6 +17,10 @@ let Controls = ({ handleSearch, handleSort, sortOptions }) => (
             ))}
         </select>
       </form>
+    </div>
+      <Post
+        handlePost={handlePost}
+      />
   </div>
 );
 

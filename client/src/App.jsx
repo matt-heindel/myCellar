@@ -25,6 +25,10 @@ let App = () => {
     setWines(sortedWines);
   }
 
+  const handlePost = (event) => {
+    alert('thanks for posting!');
+  }
+
   useEffect(() => {
     axios.get('/wines')
       .then(res => {
@@ -40,6 +44,7 @@ let App = () => {
       <Controls
         handleSearch={handleSearch}
         handleSort={handleSort}
+        handlePost={handlePost}
         sortOptions={sortOptions}
       />
       <WineList

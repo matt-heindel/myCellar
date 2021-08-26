@@ -8,9 +8,9 @@ const Ads = () => {
     <>
       <p>Paid Advertisements</p>
       <p>Not associated with myCellar</p>
-      <img className='ad' src={ad01} alt='advertisement'></img>
       <img className='ad' src={ad03} alt='advertisement'></img>
       <img className='ad' src={ad02} alt='advertisement'></img>
+      <img className='ad' src={ad01} alt='advertisement'></img>
     </>
   )
 }

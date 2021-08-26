@@ -54,9 +54,25 @@ body {
 }
 
 #form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   margin-left: 50px;
   margin-bottom: 25px;
   border-bottom: 2px solid #54524d;
+}
+
+#control-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.control {
+  width: 400px;
+}
+
+#add-wine {
+  margin-left: 90px;
 }
 
 .img {
